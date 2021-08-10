@@ -14,6 +14,7 @@ namespace Algorithms
             Console.WriteLine("2.Binary search word");
             Console.WriteLine("3.Insertion Sort");
             Console.WriteLine("4.Bubble Sort");
+            Console.WriteLine("5.Merge Sort");
             Console.Write("Enter your choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -41,6 +42,11 @@ namespace Algorithms
                     int[] array = { 23,22,25,21,26,29 };
                     bubbleSort.Sort(array);
                     bubbleSort.PrintArray(array);
+                    break;
+                case 5:
+                    int[] arr1 = { 23,22,25,21,26,29,-27 };
+                    MergeSort.Sort(arr1, 0, arr1.Length - 1);
+                    MergeSort.PrintArray(arr1);
                     break;
                 default:
                     break;
