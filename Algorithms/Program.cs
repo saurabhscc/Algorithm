@@ -13,6 +13,7 @@ namespace Algorithms
             Console.WriteLine("1.Permutation of string");
             Console.WriteLine("2.Binary search word");
             Console.WriteLine("3.Insertion Sort");
+            Console.WriteLine("4.Bubble Sort");
             Console.Write("Enter your choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -34,6 +35,12 @@ namespace Algorithms
                     string[] arr = { "Hello","I","am","Working", "On" ,"Algorithm" ,"Problems" };
                     insertionSort.Sort(arr); 
                     insertionSort.PrintArray(arr);
+                    break;
+                case 4:
+                    BubbleSort bubbleSort = new BubbleSort();
+                    int[] array = { 23,22,25,21,26,29 };
+                    bubbleSort.Sort(array);
+                    bubbleSort.PrintArray(array);
                     break;
                 default:
                     break;
